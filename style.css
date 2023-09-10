@@ -1,0 +1,44 @@
+article {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 330px;
+    border: 1px solid black;
+    border-radius: 30px;
+    background: rgb(143,143,143);
+    background: linear-gradient(140deg, rgba(143,143,143,1) 0%, rgba(227,227,227,1) 100%);
+}
+  
+img {
+    width: inherit;
+}
+
+p {
+    padding-left: 10px;
+}
+
+h4, h5 {
+    padding-left: 50px;
+}
+  
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 25px;
+    }
+}
